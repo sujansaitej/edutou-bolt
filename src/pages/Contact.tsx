@@ -61,7 +61,7 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-indigo-600 mt-1 mr-4" />
                   <div>
                     <h3 className="font-bold text-gray-900">Email Us</h3>
-                    <p className="text-gray-700">info@edutou.com</p>
+                    <p className="text-gray-700">edutouskillacademy@gmail.com</p>
                   </div>
                 </div>
                 
@@ -69,17 +69,12 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-indigo-600 mt-1 mr-4" />
                   <div>
                     <h3 className="font-bold text-gray-900">Call Us</h3>
-                    <p className="text-gray-700">+1 (555) 123-4567</p>
+                    <p className="text-gray-700">+91 90804 69741</p>
                   </div>
                 </div>
                 
-                <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-indigo-600 mt-1 mr-4" />
-                  <div>
-                    <h3 className="font-bold text-gray-900">Visit Us</h3>
-                    <p className="text-gray-700">123 Innovation Drive, Tech City, TC 12345</p>
-                  </div>
-                </div>
+            
+          
               </div>
               
               <div className="bg-gray-50 p-6 rounded-xl">
@@ -158,9 +153,7 @@ const Contact = () => {
                     >
                       <option value="none">Select a course (optional)</option>
                       <option value="full-stack-foundation">Full Stack Foundation</option>
-                      <option value="ai-development">AI Development</option>
-                      <option value="vr-learning">VR Learning Spaces</option>
-                      <option value="no-code">No-Code App Building</option>
+          
                     </select>
                   </div>
                   
@@ -208,50 +201,9 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Our Location</h2>
-          
-          <div className="bg-white p-4 rounded-xl shadow-md">
-            {/* In a real application, you would embed a Google Map or similar here */}
-            <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-              <MapPin className="h-12 w-12 text-indigo-600 mr-3" />
-              <span className="text-xl font-medium text-gray-700">Map would be embedded here</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Frequently Asked Questions</h2>
-          
-          <div className="space-y-6 max-w-3xl mx-auto">
-            <div className="bg-gray-50 p-6 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">How do I enroll in a course?</h3>
-              <p className="text-gray-700">
-                You can enroll by filling out the contact form on this page, or by calling our admissions team directly. We'll guide you through the enrollment process and answer any questions you may have.
-              </p>
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">What payment methods do you accept?</h3>
-              <p className="text-gray-700">
-                We accept all major credit cards, PayPal, and bank transfers. We also offer payment plans for select courses to make education more accessible.
-              </p>
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Can I get a refund if I'm not satisfied?</h3>
-              <p className="text-gray-700">
-                Yes, we offer a satisfaction guarantee. If you're not satisfied with your course within the first 7 days, you can request a full refund. Please contact our support team for details.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+
+     
     </div>
   );
 };

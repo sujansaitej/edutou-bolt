@@ -1,6 +1,7 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
-import { Code, Brain, Cpu, Smartphone, Clock, Users, Award, ArrowRight } from 'lucide-react';
+
+import { Code, Brain, Clock, Users, Award, ArrowRight } from 'lucide-react';
 
 const Courses = () => {
   const courses = [
@@ -14,36 +15,7 @@ const Courses = () => {
       featured: true,
       image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80'
     },
-    {
-      id: 'ai-development',
-      title: 'AI Development Fundamentals',
-      description: 'Learn to build and deploy AI models for real-world applications with hands-on projects.',
-      icon: <Brain className="h-6 w-6" />,
-      duration: '14 days',
-      level: 'Intermediate',
-      featured: false,
-      image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80'
-    },
-    {
-      id: 'vr-learning',
-      title: 'VR Learning Spaces',
-      description: 'Explore the future of education through virtual reality environments and immersive learning experiences.',
-      icon: <Cpu className="h-6 w-6" />,
-      duration: '10 days',
-      level: 'All Levels',
-      featured: false,
-      image: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80'
-    },
-    {
-      id: 'no-code',
-      title: 'No-Code App Building',
-      description: 'Create sophisticated applications without writing a single line of code using modern no-code platforms.',
-      icon: <Smartphone className="h-6 w-6" />,
-      duration: '5 days',
-      level: 'Beginner',
-      featured: false,
-      image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80'
-    }
+   
   ];
 
   return (
@@ -105,16 +77,11 @@ const Courses = () => {
                       </div>
                     </div>
                     <Link 
-                      to={`/courses/${course.id}`} 
-                      className={`inline-flex items-center px-6 py-3 rounded-lg font-medium transition-colors ${
-                        course.featured 
-                          ? 'bg-indigo-600 hover:bg-indigo-700 text-white' 
-                          : 'bg-gray-100 hover:bg-gray-200 text-gray-900'
-                      }`}
-                    >
-                      View Course Details
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
+  to="/enroll" 
+  className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 inline-block mt-4"
+>
+  Enroll Now
+</Link>
                   </div>
                 </div>
               </div>

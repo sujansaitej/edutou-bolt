@@ -155,8 +155,21 @@ const Home = () => {
           </Link>
         </div>
       </section>
-    </div>
-  );
+      <section className="py-16 bg-gradient-to-r from-indigo-900 to-purple-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Future?</h2>
+          <p className="text-xl text-indigo-200 mb-8 max-w-3xl mx-auto">
+            Join thousands of students who have accelerated their careers with EDUTOU's innovative learning approach.
+          </p>
+          <Link 
+            to="/enroll" 
+            className="bg-indigo-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors"
+          >
+            Enroll in Workshop
+          </Link>
+        </div>
+      </section>
+    </div>  );
 };
 
 export default Home;

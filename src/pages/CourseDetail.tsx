@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Clock, Calendar, Users, Award, CheckCircle, ArrowRight, Code, Brain, Zap, BookOpen } from 'lucide-react';
-
+import { Clock, Calendar, Users, Award, CheckCircle, ArrowRight, Check } from 'lucide-react';
 const CourseDetail = () => {
   return (
     <div>
@@ -26,7 +25,7 @@ const CourseDetail = () => {
                 </div>
                 <div className="flex items-center">
                   <Calendar className="h-5 w-5 text-indigo-300 mr-2" />
-                  <span>Next Cohort: June 15, 2025</span>
+                  <span>Cohort-1: 15th to 22nd March </span>
                 </div>
                 <div className="flex items-center">
                   <Users className="h-5 w-5 text-indigo-300 mr-2" />
@@ -34,7 +33,7 @@ const CourseDetail = () => {
                 </div>
               </div>
               <Link 
-                to="/contact" 
+                to="/enroll" 
                 className="inline-flex items-center px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg font-medium transition-colors"
               >
                 Enroll Now
@@ -142,7 +141,7 @@ const CourseDetail = () => {
                     <Calendar className="h-5 w-5 text-indigo-600 mr-3" />
                     <div>
                       <p className="font-medium text-gray-900">Start Date</p>
-                      <p className="text-gray-600">June 15, 2025</p>
+                      <p className="text-gray-600">March 15th to 22nd</p>
                     </div>
                   </div>
                   
@@ -182,7 +181,7 @@ const CourseDetail = () => {
                 </div>
                 
                 <Link 
-                  to="/contact" 
+                  to="/enroll" 
                   className="block w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white text-center rounded-lg font-medium transition-colors"
                 >
                   Enroll Now
@@ -193,104 +192,7 @@ const CourseDetail = () => {
         </div>
       </section>
 
-      {/* Instructors Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Meet Your Instructors</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-md flex items-center">
-              <img 
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
-                alt="Instructor" 
-                className="w-24 h-24 rounded-full object-cover mr-6"
-              />
-              <div>
-                <h3 className="text-xl font-bold text-gray-900">David Chen</h3>
-                <p className="text-indigo-600 mb-2">Lead Instructor, Full Stack Developer</p>
-                <p className="text-gray-700">
-                  10+ years of experience building web applications and teaching development skills. Previously worked at Google and several successful startups.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white p-6 rounded-xl shadow-md flex items-center">
-              <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80" 
-                alt="Instructor" 
-                className="w-24 h-24 rounded-full object-cover mr-6"
-              />
-              <div>
-                <h3 className="text-xl font-bold text-gray-900">Maya Johnson</h3>
-                <p className="text-indigo-600 mb-2">AI Learning Specialist</p>
-                <p className="text-gray-700">
-                  Expert in adaptive learning systems and personalized education. Helps design the AI components that make your learning experience unique.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">What Our Students Say</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 p-6 rounded-xl">
-              <div className="flex items-center mb-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
-                  alt="Student" 
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-gray-900">Sarah K.</h4>
-                  <p className="text-gray-600">Career Changer</p>
-                </div>
-              </div>
-              <p className="text-gray-700 italic">
-                "This workshop completely changed my career trajectory. I went from knowing nothing about coding to building my own web app in just 7 days. The AI-powered learning approach helped me focus on exactly what I needed."
-              </p>
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-xl">
-              <div className="flex items-center mb-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
-                  alt="Student" 
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-gray-900">Michael T.</h4>
-                  <p className="text-gray-600">College Student</p>
-                </div>
-              </div>
-              <p className="text-gray-700 italic">
-                "I learned more in this one-week workshop than in an entire semester of my computer science classes. The hands-on approach and real-world projects made all the difference."
-              </p>
-            </div>
-            
-            <div className="bg-gray-50 p-6 rounded-xl">
-              <div className="flex items-center mb-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=922&q=80" 
-                  alt="Student" 
-                  className="w-12 h-12 rounded-full object-cover mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-gray-900">Jessica R.</h4>
-                  <p className="text-gray-600">Small Business Owner</p>
-                </div>
-              </div>
-              <p className="text-gray-700 italic">
-                "As a business owner, I needed to understand web development to better communicate with my tech team. This workshop gave me exactly what I needed, and now I can even make small changes to our website myself!"
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">

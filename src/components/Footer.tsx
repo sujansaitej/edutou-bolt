@@ -4,73 +4,85 @@ import { Brain, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } fr
 
 const Footer = () => {
   return (
-    <footer className="bg-indigo-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-black text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+          {/* Brand Section */}
           <div>
-            <div className="flex items-center mb-4">
-              <Brain className="h-8 w-8 text-indigo-300 mr-2" />
-              <span className="font-bold text-xl tracking-tight">EDUTOU</span>
+            <div className="flex items-center mb-2">
+              <Brain className="h-6 w-6 text-indigo-300 mr-2" />
+              <span className="font-bold text-lg text-white">EDUTOU</span>
             </div>
-            <p className="text-indigo-200 mb-4">
-              Redefining Education with AI-driven learning, real-world execution, and industry-aligned mentorship.
+            <p className="text-white text-sm mb-2">
+              Redefining Education with AI-driven learning.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-indigo-200 hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
+            <div className="flex space-x-3">
+              <a href="#" className="text-white hover:text-indigo-300">
+                <Facebook className="h-4 w-4" />
               </a>
-              <a href="#" className="text-indigo-200 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="#" className="text-white hover:text-indigo-300">
+                <Twitter className="h-4 w-4" />
               </a>
-              <a href="#" className="text-indigo-200 hover:text-white transition-colors">
-                <Instagram className="h-5 w-5" />
+              <a href="#" className="text-white hover:text-indigo-300">
+                <Instagram className="h-4 w-4" />
               </a>
-              <a href="#" className="text-indigo-200 hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
+              <a href="#" className="text-white hover:text-indigo-300">
+                <Linkedin className="h-4 w-4" />
               </a>
             </div>
           </div>
-          
+
+          {/* Quick Links Section */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><Link to="/" className="text-indigo-200 hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/about" className="text-indigo-200 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/courses" className="text-indigo-200 hover:text-white transition-colors">Courses</Link></li>
-              <li><Link to="/contact" className="text-indigo-200 hover:text-white transition-colors">Contact</Link></li>
+            <h3 className="font-semibold text-base mb-2">Quick Links</h3>
+            <ul className="space-y-1 text-sm">
+              <li><Link to="/" className="text-white hover:text-indigo-300">Home</Link></li>
+              <li><Link to="/about" className="text-white hover:text-indigo-300">About Us</Link></li>
+              <li><Link to="/courses" className="text-white hover:text-indigo-300">Courses</Link></li>
+              <li><Link to="/contact" className="text-white hover:text-indigo-300">Contact</Link></li>
             </ul>
           </div>
-          
+
+          {/* Our Courses Section */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Our Courses</h3>
-            <ul className="space-y-2">
-              <li><Link to="/courses/full-stack-foundation" className="text-indigo-200 hover:text-white transition-colors">Full Stack Foundation</Link></li>
-              <li><Link to="/courses" className="text-indigo-200 hover:text-white transition-colors">AI Development</Link></li>
-              <li><Link to="/courses" className="text-indigo-200 hover:text-white transition-colors">VR Learning Spaces</Link></li>
-              <li><Link to="/courses" className="text-indigo-200 hover:text-white transition-colors">No-Code App Building</Link></li>
+            <h3 className="font-semibold text-base mb-2">Our Workshop</h3>
+            <ul className="space-y-1 text-sm">
+              <li><Link to="/courses/full-stack-foundation" className="text-white hover:text-indigo-300">Full Stack Foundation</Link></li>
             </ul>
           </div>
-          
+
+          {/* Policy Section */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Contact Us</h3>
-            <ul className="space-y-2">
+            <h3 className="font-semibold text-base mb-2">Policies</h3>
+            <ul className="space-y-1 text-sm">
+              <li><Link to="/terms" className="text-white hover:text-indigo-300">Terms & Conditions</Link></li>
+              <li><Link to="/privacy" className="text-white hover:text-indigo-300">Privacy Policy</Link></li>
+              <li><Link to="/refund" className="text-white hover:text-indigo-300">Refund Policy</Link></li>
+            </ul>
+          </div>
+
+          {/* Contact Us Section */}
+          <div>
+            <h3 className="font-semibold text-base mb-2">Contact Us</h3>
+            <ul className="space-y-1 text-sm">
               <li className="flex items-center">
-                <Mail className="h-5 w-5 mr-2 text-indigo-300" />
-                <span className="text-indigo-200">info@edutou.com</span>
+                <Mail className="h-4 w-4 mr-1" />
+                <span>edutouskillacademy@gmail.com</span>
               </li>
               <li className="flex items-center">
-                <Phone className="h-5 w-5 mr-2 text-indigo-300" />
-                <span className="text-indigo-200">+1 (555) 123-4567</span>
+                <Phone className="h-4 w-4 mr-1" />
+                <span>+91 90804 69741</span>
               </li>
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 mr-2 text-indigo-300 mt-1" />
-                <span className="text-indigo-200">123 Innovation Drive, Tech City, TC 12345</span>
+                <MapPin className="h-4 w-4 mr-1 mt-1" />
+                <span className="text-xs">Mr. RISHI S, Thirunageswaram, Kumbakonam-612204</span>
               </li>
             </ul>
           </div>
         </div>
-        
-        <div className="border-t border-indigo-800 mt-8 pt-8 text-center text-indigo-300">
+
+        {/* Footer Bottom Section */}
+        <div className="border-t border-white mt-4 pt-4 text-center text-xs">
           <p>&copy; {new Date().getFullYear()} EDUTOU Skill Academy. All rights reserved.</p>
         </div>
       </div>
